@@ -11,10 +11,10 @@ namespace MohawkGame2D
     /// </summary>
     public class Game
     {
+        // Back out of net9.0, Debug, bin, and project folder, then enter assets.
         const string assetFolder = "../../../../assets/";
-        // 
-        Texture2D texture =
-            Graphics.LoadTexture(assetFolder + "graphics/raph 2d anim idle.png");
+        // Load graphic
+        Texture2D texture = Graphics.LoadTexture(assetFolder + "graphics/raph 2d anim idle.png");
 
         /// <summary>
         ///     Setup runs once before the game loop begins.
@@ -34,7 +34,6 @@ namespace MohawkGame2D
         public void Update()
         {
             Window.ClearBackground(Color.OffWhite);
-
             Graphics.Draw(texture, 10, 10);
         }
     }
